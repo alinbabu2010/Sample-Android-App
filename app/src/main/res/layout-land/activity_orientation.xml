@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/orientHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/sample_orientation"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#673AB7"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <LinearLayout
+        android:layout_width="665dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orientHeading"
+        app:layout_constraintVertical_bias="0.106">
+
+        <EditText
+            android:id="@+id/textInputSample"
+            style="@android:style/Widget.DeviceDefault.EditText"
+            android:layout_width="423dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="164dp"
+            android:autofillHints=""
+            android:backgroundTint="#5213C3"
+            android:drawablePadding="120dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:hint="@string/input_text"
+            android:inputType="textPersonName"
+            android:textColor="#673AB7"
+            android:textColorHint="#BE673AB7"
+            android:textColorLink="#C9673AB7" />
+
+        <Button
+            android:id="@+id/buttonClickme"
+            android:layout_width="114dp"
+            android:layout_height="38dp"
+            android:background="#673AB7"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/clickmebtn_text"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#FFEB3B"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
