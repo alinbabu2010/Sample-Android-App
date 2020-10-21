@@ -1,7 +1,12 @@
 package com.fotobom.androidtraining_alin
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -13,14 +18,17 @@ class SubActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sub)
 
+        /** View next activity on button click */
+        val nextButton = findViewById<Button>(R.id.nextButton)
+        nextButton.setOnClickListener{
+            val intent = Intent(this@SubActivity, OrientationActivity::class.java)
+            startActivity(intent)
+        }
+
+        /** Shows input test as toast message on button click */
         val toastBtn = findViewById<FloatingActionButton>(R.id.toastButton)
         toastBtn.setOnClickListener{
             showToast()
-        }
-
-        val button = findViewById<Button>(R.id.cilckhereButton)
-        button.setOnClickListener {
-            showAlert()
         }
     }
 
@@ -30,28 +38,5 @@ class SubActivity : AppCompatActivity() {
         val toastMsg = inputId.text.toString()
         val toast = Toast.makeText(applicationContext, toastMsg, Toast.LENGTH_SHORT)
         toast.show()
-    }
-
-    /** Function to show alert dialog box after button click.  */
-    private fun showAlert(){
-
-        val inputId = findViewById<EditText>(R.id.textInputSample)
-        val toastMsg = inputId.text.toString()
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle(R.string.dialogTitle)
-        builder.setMessage(R.string.dialogMessage)
-        builder.setIcon(android.R.drawable.ic_dialog_alert)
-        builder.setPositiveButton("Yes"){dialogInterface, which ->
-            Toast.makeText(applicationContext,toastMsg,Toast.LENGTH_LONG).show()
-        }
-        builder.setNeutralButton("Cancel"){dialogInterface , which ->
-            Toast.makeText(applicationContext,"Clicked cancel\n Operation cancelled.",Toast.LENGTH_LONG).show()
-        }
-        builder.setNegativeButton("No"){dialogInterface, which ->
-            Toast.makeText(applicationContext,"Clicked No",Toast.LENGTH_LONG).show()
-        }
-        val alertDialog: AlertDialog = builder.create()
-        alertDialog.setCancelable(false)
-        alertDialog.show()
     }
 }

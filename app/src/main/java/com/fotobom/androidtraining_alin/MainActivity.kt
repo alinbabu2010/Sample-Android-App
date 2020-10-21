@@ -10,7 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<Button>(R.id.cilckhereButton).setOnClickListener{
+        /** View next activity on button click */
+        findViewById<Button>(R.id.cilckButton).setOnClickListener{
             val intent = Intent(this@MainActivity, SubActivity::class.java)
             startActivity(intent)
         }

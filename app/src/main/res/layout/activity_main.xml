@@ -36,7 +36,7 @@
         tools:srcCompat="@drawable/image_sample" />
 
     <Button
-        android:id="@+id/cilckhereButton"
+        android:id="@+id/cilckButton"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="133dp"
         android:layout_height="47dp"
