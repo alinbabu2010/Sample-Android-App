@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/orient_heading"
+        android:id="@+id/orientHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/text_input"
+        android:id="@+id/textInputSample"
         style="@android:style/Widget.DeviceDefault.EditText"
         android:layout_width="334dp"
         android:layout_height="41dp"
@@ -36,15 +36,15 @@
         android:textColor="#673AB7"
         android:textColorHint="#BE673AB7"
         android:textColorLink="#C9673AB7"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonClickme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/orient_heading"
+        app:layout_constraintTop_toBottomOf="@+id/orientHeading"
         app:layout_constraintVertical_bias="0.881" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonClickme"
         android:layout_width="173dp"
         android:layout_height="49dp"
         android:layout_marginBottom="176dp"
@@ -55,12 +55,12 @@
         android:textAllCaps="false"
         android:textColor="#FFEB3B"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPrevious"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonPrevious"
         android:layout_width="145dp"
         android:layout_height="35dp"
         android:layout_marginBottom="128dp"

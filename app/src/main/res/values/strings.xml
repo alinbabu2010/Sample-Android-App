@@ -7,4 +7,10 @@
     <string name="input_text">Enter a sample text here.</string>
     <string name="toastbtn_dec">Click below send button to view toast message.</string>
     <string name="todo">TODO</string>
+    <string name="sample_orientation">Sample Orientation</string>
+    <string name="clickmebtn_text">Click me!</string>
+    <string name="previous_btntext">Previous</string>
+    <string name="dialogTitle">Dialog example</string>
+    <string name="dialogMessage">Just clcik any choices below,</string>
+    <string name="nextButtonText">Next</string>
 </resources>

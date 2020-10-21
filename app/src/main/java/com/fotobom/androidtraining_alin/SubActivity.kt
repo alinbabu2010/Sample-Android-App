@@ -18,7 +18,7 @@ class SubActivity : AppCompatActivity() {
             showToast()
         }
 
-        val button = findViewById<Button>(R.id.cilckhere_button)
+        val button = findViewById<Button>(R.id.cilckhereButton)
         button.setOnClickListener {
             showAlert()
         }
@@ -35,7 +35,7 @@ class SubActivity : AppCompatActivity() {
     /** Function to show alert dialog box after button click.  */
     private fun showAlert(){
 
-        val inputId = findViewById<EditText>(R.id.text_input)
+        val inputId = findViewById<EditText>(R.id.textInputSample)
         val toastMsg = inputId.text.toString()
         val builder = AlertDialog.Builder(this)
         builder.setTitle(R.string.dialogTitle)
