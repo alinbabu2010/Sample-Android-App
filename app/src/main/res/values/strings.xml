@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">AndroidTraining_Alin</string>
+    <string name="app_name">Sample App</string>
+    <string name="heading_home">Welcome!</string>
+    <string name="button_text">Click Here!</string>
+    <string name="sample_image_desc">Sample Image</string>
 </resources>
