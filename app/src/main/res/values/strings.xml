@@ -3,4 +3,8 @@
     <string name="heading_home">Welcome!</string>
     <string name="button_text">Click Here!</string>
     <string name="sample_image_desc">Sample Image</string>
+    <string name="toast_sample_text">Toast Sample</string>
+    <string name="input_text">Enter a sample text here.</string>
+    <string name="toastbtn_dec">Click below send button to view toast message.</string>
+    <string name="todo">TODO</string>
 </resources>
