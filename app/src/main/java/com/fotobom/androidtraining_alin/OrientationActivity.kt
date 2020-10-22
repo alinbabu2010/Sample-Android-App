@@ -26,13 +26,13 @@ class OrientationActivity : AppCompatActivity() {
         val toastMsg = inputId.text.toString()
         val builder = AlertDialog.Builder(this)
         builder.setTitle(R.string.dialogTitle)
-        builder.setMessage(R.string.dialogMessage)
+        builder.setMessage(toastMsg)
         builder.setIcon(android.R.drawable.ic_dialog_alert)
         builder.setPositiveButton("Yes"){dialogInterface, which ->
-            Toast.makeText(applicationContext,toastMsg, Toast.LENGTH_LONG).show()
+            Toast.makeText(applicationContext,"Clicked Yes", Toast.LENGTH_LONG).show()
         }
         builder.setNeutralButton("Cancel"){dialogInterface , which ->
-            Toast.makeText(applicationContext,"Clicked cancel\n Operation cancelled.", Toast.LENGTH_LONG).show()
+            Toast.makeText(applicationContext,"Clicked cancel", Toast.LENGTH_LONG).show()
         }
         builder.setNegativeButton("No"){dialogInterface, which ->
             Toast.makeText(applicationContext,"Clicked No", Toast.LENGTH_LONG).show()

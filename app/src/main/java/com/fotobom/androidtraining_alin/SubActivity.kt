@@ -36,7 +36,6 @@ class SubActivity : AppCompatActivity() {
     fun showToast(){
         val inputId = findViewById<EditText>(R.id.toastInput)
         val toastMsg = inputId.text.toString()
-        val toast = Toast.makeText(applicationContext, toastMsg, Toast.LENGTH_SHORT)
-        toast.show()
+        Toast.makeText(applicationContext, toastMsg, Toast.LENGTH_SHORT).show()
     }
 }
